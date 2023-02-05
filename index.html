@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PTO Day Calculator</title>
+    </head>
+    <body>
+        <h1>PTO Day Calculator</h1>
+        <p>Enter a desired number of weeks and I will return how much PTO you'll have at that point (assuming you don't use any).</p>
+        <form id="my-form" class="my-form">
+            <label for="balance" required>Current Balance: </label>
+            <input type="number" id="balance" name="balance"/> <br> <br>
+            <label for="rate" required>Accrual Rate (per 2 weeks): </label>
+            <input type="number" id="rate" name="rate"/> <br> <br>
+            <label for="weeks">Number of Weeks: </label>
+            <input type="number" id="weeks" name="weeks" placeholder="0"/> <br> <br>
+            <input id="submit-button" type="button" value="Calculate">
+        </form>
+        <h2>PTO Days Off</h2>
+        <p id="balance-text">Balance: XX</p>
+        <h3 id="daysOffText">You have XX days off</h3>
+
+        <script src="script.js"></script>
+    </body>
+</html>
